@@ -1,5 +1,9 @@
 # Abram Dawson
-<abramdawson@gmail.com> | [www.abramdawson.com]() | (508) 380-1506  
+
+Email | <abramdawson@gmail.com>
+---: | :---
+Web | [abramdawson.com]()
+Cell | (508) 380-1506
 
 Current | Associate at SV Angel
 ---: | :---
@@ -11,7 +15,7 @@ Current | Associate at SV Angel
  | IES Paris, Business & International Affairs
  | Noble and Greenough School
  | Cape Eleuthera Island School
- 
+
 ## Work Experience
 
 ### Associate, SV Angel
