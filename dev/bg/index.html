@@ -1,74 +1,144 @@
+
 <html>
+
 <head>
 	<meta charset=utf-8 />
 	<link rel="icon" type="image/png" href="img/favicon.ico"/>
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<style type="text/css">
-		body {background:linear-gradient(to right, #39f 0%,#39f 3%,#fff 3%,#fff 100%); padding: 0 4%;max-width: 640px;font-size:24px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
-		a {color:#39f;text-decoration:none;}
-		a:hover {color:#39f;text-decoration:underline;}
-		p {color:#454545;letter-spacing:-0.3;margin:0.25em 0;font-size:80%}
-		h1 {color:#3399ff;font-weight:900;margin-top:3%;font-size:200%;}
-		h2 {color:#ccc;font-weight:900;margin-top:3%;font-size: 150%;}
-		small {color: #999;font-size:75%}
-		.info {margin:1em 0 2em;}
-		.primary-link {font-size: 65%; color:#39f;font-weight:500;border:none;margin-right:0.75em}
-		.primary-link:hover {color:#39f;text-decoration:underline}
-		.primary-link:last-child {margin-right:0}
-		img {width:18%;min-width: 100px}
-		.img-app {border-radius:18px;float:left;margin-right:2%}
-		.app-white {border:1px solid #CCC;}
-		.img-team {border-radius:80px;float:left;margin-right:2%;}
-		@media screen and (max-width:30em) {
-  			body {font-size: 20px;}
-		}
+		body {background:linear-gradient(to right, #39f 0%,#39f 1%,#fff 1%,#fff 100%);font-size:200%}
+		a {color:#39f;}
+		a:hover {color:#39f;}
+		p {font-weight:400;letter-spacing:-0.3}
+		h1 {color:#3399ff;font-weight:900;}
+		.primary-link {color:#39f;font-weight:500;border:none;}
+		.primary-link:hover {color:#39f;background:none;text-decoration: underline}
+		.date {color:#999;margin-top:0.5em}
+		.img-rounded {border-radius: 20px}
+		hr {border-width: 3px;}
 	</style>
 </head>
+
 <body>
-	<h1>Battery Gray</h1>
-	<p>We build digital products in San Francisco. Follow us <a href="https://twitter.com/BatteryGray">@batterygray</a>, read about our <a href="http://fortwiki.com/Fort_Church">namesake</a>, or send us an <a href="mailto:batterygray@gmail.com?Subject=Hi" target="_blank">email</a>.</p>
-	<h2>Apps</h2>
-	<!-- App: HailMe -->
-	<div class="info">
-		<img class="img-app app-white" src="img/icon-hailme.png" width="88px">
-		<strong>HailMe</strong><br>
-		<small>Feb 2015</small>
-		<p>HailMe gets someone's attention</p>
-		<div>
-			<a class="primary-link" href="https://itunes.apple.com/app/id956407355">iOS Download</a>
-			<a class="primary-link" href="http://hailme.cab/">hailme.cab</a>
-		</div>
-	</div>
-	<!-- App: TD4W -->
-	<div class="info">
-		<img class="img-app" src="img/icon-td4w.png" width="88px">
-		<strong>TD4W</strong><br>
-		<small>Sept 2014</small>
-		<p>TD4W is a party in your pocket</p>
-		<div>
-			<a class="primary-link" href="https://itunes.apple.com/app/id912651703">iOS Download</a>
-			<a class="primary-link" href="http://td4wapp.com/">td4wapp.com</a>
-		</div>
-	</div>
-	<h2>Team</h2>
-	<!-- Team: Abram -->
-	<div class="info">
-		<img class="img-team" src="https://pbs.twimg.com/profile_images/474290052613156864/DHf5nMUq_400x400.jpeg" width="88px">
-		<strong>Abram Dawson</strong><br>
-		<small>Associate at SV Angel</small>
-		<p>Some say cucumbers taste better pickled</p>
-		<div>
-			<a class="primary-link" href="https://twitter.com/abramdawson">@abramdawson</a>
-		</div>
-	</div>
-	<!-- Team: Matt -->
-	<div class="info">
-		<img class="img-team" src="https://pbs.twimg.com/profile_images/563486431826305025/F1TznTvJ_400x400.jpeg" width="88px">
-		<strong>Matt Baker</strong><br>
-		<small>iOS Developer at Lookout</small>
-		<p>I make apps, currently @Lookout</p>
-		<div>
-			<a class="primary-link" href="https://twitter.com/baker">@baker</a>
+	<div class="container-fluid">
+		<div class="col-sm-12">
+			<br>
+			<h1>Battery Gray</h1>
+			<p>We build digital products in San Francisco. Follow us <a href="https://twitter.com/BatteryGray">@batterygray</a>, read about our <a href="http://fortwiki.com/Fort_Church">namesake</a>, or send us an <a href="mailto:batterygray@gmail.com?Subject=Hi" target="_blank">email</a>.</p>
+			<hr>
+			<div class="row">
+				<!-- COLUMN: LEFT -->
+				<div class="col-md-6">
+					<!-- SECTION: APPS -->
+					<ul class="media-list" id="apps">
+						<!-- APP: Buckets -->
+						<li class="media">
+							<div class="media">
+								<div class="pull-left">
+									<a href="https://itunes.apple.com/app/id912651703">
+										<img class="media-object img-rounded" height="100" src="img/icon-buckets.png">
+									</a>
+									<p class="small text-center date">Mar 2015</p>
+								</div>
+								<div class="media-body">
+									<h2 class="media-heading">Buckets</h2>
+									<p>Bucket things into lists.</p>
+									<ul class="list-inline">
+										<li><a class="btn btn primary-link" href="https://itunes.apple.com/app/id912651703">iOS Download</a></li>
+										<li><a class="btn btn primary-link" href="http://buckets.work/">buckets.work</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+						</li><!-- End APP -->
+						<!-- APP: HailMe -->
+						<li class="media">
+							<div class="media">
+								<div class="pull-left">
+									<a href="https://itunes.apple.com/app/id912651703">
+										<img class="media-object img-rounded" height="100" src="img/icon-hailme.png" style="border:1px solid #ccc">
+									</a>
+									<p class="small text-center date">Feb 2015</p>
+								</div>
+								<div class="media-body">
+									<h2 class="media-heading">HailMe</h2>
+									<p>Get someone's attention! <a href="https://docs.google.com/forms/d/1N83FWSNrK99UGWhajzhJ5ibgoT5FmS6EbOPtEntEAoY/viewform?c=0">Submit new phrase</a></p>
+									<ul class="list-inline">
+										<li><a class="btn btn primary-link" href="https://itunes.apple.com/app/id912651703">iOS Download</a></li>
+										<li><a class="btn btn primary-link" href="http://hailme.cab/">hailme.cab</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+						</li><!-- End APP -->
+						<!-- APP: TD4W -->
+						<li class="media">
+							<div class="media">
+								<div class="pull-left">
+									<a href="https://itunes.apple.com/app/id912651703">
+										<img class="media-object img-rounded" height="100" src="img/icon-td4w.png">
+									</a>
+									<p class="small text-center date">Sept 2014</p>
+								</div>
+								<div class="media-body">
+									<h2 class="media-heading">TD4W</h2>
+									<p>A party in your pocket.</p>
+									<ul class="list-inline">
+										<li><a class="btn btn primary-link" href="https://itunes.apple.com/app/id912651703">iOS Download</a></li>
+										<li><a class="btn btn primary-link" href="http://td4wapp.com/">td4wapp.com</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+						</li><!-- End APP -->
+					</ul><!-- End SECTION -->
+				</div><!-- End COLUMN -->
+				<!-- COLUMN: RIGHT -->
+				<div class="col-md-6">
+					<!-- SECTION: TEAM -->
+					<ul class="media-list" id="team">
+						<!-- PERSON: ABRAM -->
+						<li class="media">
+							<div class="media">
+								<div class="pull-left">
+									<a href="https://itunes.apple.com/app/id956407355">
+										<img class="media-object img-circle" height="100" src="https://pbs.twimg.com/profile_images/474290052613156864/DHf5nMUq_400x400.jpeg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h2 class="media-heading">Abram Dawson</h2>
+									<p>Some say cucumbers taste better pickled</p>
+									<ul class="list-inline">
+										<li><a class="btn btn primary-link" href="https://twitter.com/abramdawson">@abramdawson</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+						</li><!-- End PERSON -->
+						<!-- PERSON: MATT -->
+						<li class="media">
+							<div class="media">
+								<div class="pull-left">
+									<a href="https://itunes.apple.com/app/id956407355">
+										<img class="media-object img-circle" height="100" src="https://pbs.twimg.com/profile_images/563486431826305025/F1TznTvJ_400x400.jpeg">
+									</a>
+								</div>
+								<div class="media-body">
+									<h2 class="media-heading">Matt Baker</h2>
+									<p>Do you ever look at a kiwi and think “what a hairy potato?"</p>
+									<ul class="list-inline">
+										<li><a class="btn btn primary-link" href="https://twitter.com/baker">@baker</a></li>
+									</ul>
+								</div>
+							</div>
+							<br>
+						</li><!-- End PERSON -->
+					</ul><!-- End SECTION -->
+				</div><!-- End COLUMN -->
+			</div>
 		</div>
 	</div>
 </body>
+
 </html>
